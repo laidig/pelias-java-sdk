@@ -76,4 +76,7 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	<scm>
+		<url>https://github.com/laidig/pelias-java-sdk.git</url>
+	</scm>
 </project>
