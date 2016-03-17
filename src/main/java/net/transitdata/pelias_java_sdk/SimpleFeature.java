@@ -7,7 +7,7 @@ import net.transitdata.pelias_java_sdk.gson.Feature;
 import net.transitdata.pelias_java_sdk.gson.Geometry;
 import net.transitdata.pelias_java_sdk.gson.Properties;
 
-
+@AutoValue
 public abstract class SimpleFeature implements Serializable {
     public static final String ADDRESS_LAYER = "address";
 
@@ -82,7 +82,6 @@ public abstract class SimpleFeature implements Serializable {
         public abstract SimpleFeature build();
     }
 
-    @AutoValue
     public static Builder builder() {
         return new AutoValue_SimpleFeature.Builder();
     }
